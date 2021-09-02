@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đơn giản</title>
+    <style>
+        .container {
+            border: white;
+            width: 500px;
+            height: auto;
+
+        }
+
+        body {
+            font-family: . VnAvantH;
+        }
+
+        div {
+            width: 450px;
+            height: 450px;
+            margin: auto;
+
+        }
+
+        table tr td {
+            background-color: aliceblue;
+        }
+        form    {
+            width:370px;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <form action="" method="post">
+        <fieldset>
+            <table border="0">
+                <caption style="background-color: red; color: white">SỞ THÍCH CỦA BẠN</caption>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td><input type="text" name="yourname"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <input id="sport" type="checkbox"><label for="sport">Thể thao</label>
+                        <input id="music" type="checkbox"><label for="music">Âm nhạc</label>
+                        <input id="readbook" type="checkbox"><label for="readbook">Đọc sách</label> <br>
+                        <input id="web" type="checkbox"><label for="web">Lướt web</label>
+                        <input id="playgame" type="checkbox"><label for="playgame">Chơi game</label>
+                        <input id="film" type="checkbox"><label for="film">Điện ảnh</label><br>
+                        <input id="travel" type="checkbox"><label for="travel">Du lịch</label>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button>Gửi thông tin</button>
+                        <button>Nhập lại</button>
+                    </td>
+
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+        </fieldset>
+
+    </form>
+</div>
+</body>
+</html>
