@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let inputPhysics;
+    let inputMath;
+    let inputChemistry;
+    inputPhysics = prompt("Nhập điểm Lý");
+    inputMath = prompt("Nhập điểm Toán");
+    inputChemistry = prompt("Nhập điểm Hóa");
+    let Physics = parseInt(inputPhysics);
+    let Math = parseInt(inputMath);
+    let Chemistry = parseInt(inputChemistry);
+    let average = (Physics + Math + Chemistry) / 3;
+    document.write("Điểm trung bình: " + average);
+</script>
+</body>
+</html>
