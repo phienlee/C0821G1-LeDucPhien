@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Nhập tên: </label>
+    <input type="text" placeholder="Nhập tên của bạn" id="name">
+    <button type="submit" onclick="showMessage()">Xác nhận</button>
+</form>
+<script>
+    function showMessage() {
+        let name = document.getElementById('name').value;
+        alert("XIn chào " + name)
+    }
+</script>
+</body>
+
+</html>
