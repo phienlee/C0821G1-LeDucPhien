@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let message;
+    //
+    // if (login == 'Employee') {
+    //     message = 'Hello';
+    // } else if (login == 'Director') {
+    //     message = 'Greetings';
+    // } else if (login == '') {
+    //     message = 'No login';
+    // } else {
+    //     message = '';
+    // }
+    let message;
+    let login = prompt('Nhập vào giá trị');
+    switch (login){
+        case 'Employee':
+            message = 'Hello';
+            alert(message) ;
+            break;
+        case 'Director' :
+            message = 'Greetings';
+            alert(message);
+            break;
+        case '':
+            message = 'No login';
+            alert(message);
+            break;
+        default:
+            message = '';
+            alert(message);
+    }
+</script>
+</body>
+</html>

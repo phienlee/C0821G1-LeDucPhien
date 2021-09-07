@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại học sinh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Nhập điểm:</td>
+    </tr>
+    <tr>
+        <td>
+            <input id="math" type="text">
+        </td>
+        <td>
+            <input id="physics" type="text">
+        </td>
+        <td>
+            <input id="chemistry" type="text">
+        </td>
+        <td>
+            <button onclick=score()>Xét điêm</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Điểm Trung bình:</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <h3 id="result"></h3>
+        </td>
+    </tr>
+</table>
+<script>
+    function score() {
+        let math = parseInt(document.getElementById('math').value);
+        let physics = parseInt(document.getElementById('physics').value);
+        let chemistry = parseInt(document.getElementById('chemistry').value);
+        ;
+        let average = (math + physics + chemistry) / 3;
+        if (average >= 8) {
+            document.getElementById('result').innerText = average + '-> Bạn được điểm Giỏi!';
+        } else if (average >= 7) {
+            document.getElementById('result').innerText = average + '-> Bạn được điểm Khá!';
+        } else if (average >= 6) {
+            document.getElementById('result').innerText = average + '-> Bạn được điểm Trung bình!';
+        } else {
+            document.getElementById('result').innerText = average + '-> Bạn được điểm Yếu!';
+        }
+    }
+</script>
+</body>
+</html>
