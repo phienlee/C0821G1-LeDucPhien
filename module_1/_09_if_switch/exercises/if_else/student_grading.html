@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại học sinh</title>
+</head>
+<body>
+<script>
+    let grade1 = parseInt(prompt('Nhập điểm kiểm tra miệng'));
+    let grade2 = parseInt(prompt('Nhập điểm kiểm tra 1 tiết'));
+    let grade3 = parseInt(prompt('Nhập điểm kiểm tra 15p '));
+    let average = (grade1 + grade2 + grade3)/3;
+    let grade4 = parseInt(prompt('Nhập điểm thi giữa kỳ'));
+    let grade5 = parseInt(prompt('Nhập điểm thi cuối kỳ'));
+    let academic = (average + grade4 + grade5)/3;
+    if (academic>=8){
+        document.write(academic + 'Xếp loại Giỏi');
+    }else if(academic>=7){
+        document.write(academic + 'Xếp loại Khá');
+    }else if(academic>=5){
+        document.write(academic + 'Xếp loại Trung bình')
+    }else if (isNaN(academic)){
+        document.write('Vui lòng nhập vào số')
+    }
+</script>
+</body>
+</html>
