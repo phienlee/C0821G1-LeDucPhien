@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="day" type="text">
+    <button onclick="checkday1()">Tính số ngày</button>
+    <p id="result"></p>
+    <br>
+    <input id="days" type="text">
+    <button onclick="checkday2()">Tính số ngày</button>
+    <p id="results"></p>
+<script>
+    function checkday1(){
+        let month = document.getElementById('day').value;
+        switch (month){
+            case '1':
+                document.getElementById('result').innerText = "Tháng 1 có 31 ngày";
+                break;
+            case '2' :
+                document.getElementById('result').innerText = "Tháng 2 có 28 ngày và 29 ngày";
+                break;
+            case '3' :
+                document.getElementById('result').innerText = "Tháng 3 có 31 ngày";
+                break;
+            case '4':
+                document.getElementById('result').innerText = "Tháng 4 có 30 ngày";
+                break;
+            case '5' :
+                document.getElementById('result').innerText = "Tháng 5 có 31 ngày";
+                break;
+            case '6' :
+                document.getElementById('result').innerText = "Tháng 6 có 30 ngày";
+                break;
+            case '7' :
+                document.getElementById('result').innerText = "Tháng 7 có 31 ngày";
+                break;
+            case '8' :
+                document.getElementById('result').innerText = "Tháng 8 có 31 ngày";
+                break;
+            case '9' :
+                document.getElementById('result').innerText = "Tháng 9 có 30 ngày";
+                break;
+            case '10' :
+                document.getElementById('result').innerText = "Tháng 10 có 31 ngày";
+                break;
+            case '11' :
+                document.getElementById('result').innerText = "Tháng 11 có 30 ngày";
+                break;
+            case '12' :
+                document.getElementById('result').innerText = "Tháng 12 có 31 ngày";
+                break;
+            default :
+                document.getElementById('result').innerText = "Vui lòng nhập đúng số tháng";
+            }
+    }
+        function checkday2(){
+         let month = document.getElementById('days').value;
+         switch (month){
+             case '1':
+                 document.getElementById('results').innerText = "Tháng 1 có 31 ngày";
+                 break;
+             case '2' :
+                 document.getElementById('results').innerText = "Tháng 2 có 28 ngày và 29 ngày";
+                 break;
+             case '3' :
+                 document.getElementById('results').innerText = "Tháng 3 có 31 ngày";
+                 break;
+             case '4':
+                 document.getElementById('results').innerText = "Tháng 4 có 30 ngày";
+                 break;
+             case  '5':
+                 document.getElementById('results').innerText = "Tháng 5 có 31 ngày";
+                 break;
+             case '6' :
+                 document.getElementById('results').innerText = "Tháng 6 có 30 ngày";
+                 break;
+             case '7':
+                 document.getElementById('results').innerText = "Tháng 7 có 31 ngày";
+                 break;
+             case '8' :
+                 document.getElementById('results').innerText = "Tháng 8 có 31 ngày";
+                 break;
+             case '9' :
+                 document.getElementById('results').innerText = "Tháng 9 có 30 ngày";
+                 break;
+             case '10' :
+                 document.getElementById('results').innerText = "Tháng 10 có 31 ngày";
+                 break;
+             case '11' :
+                 document.getElementById('results').innerText = "Tháng 11 có 30 ngày";
+                 break;
+             case '12' :
+                 document.getElementById('results').innerText = "Tháng 12 có 31 ngày";
+                 break;
+             default :
+                 document.getElementById('results').innerText = "Vui lòng nhập đúng số tháng";
+         }
+        }
+</script>
+</body>
+</html>

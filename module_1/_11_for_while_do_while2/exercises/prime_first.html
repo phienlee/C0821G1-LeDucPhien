@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị 20 số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập vào số lượng số nguyên tố cần in ra"));
+    let count = 0;
+    let i;
+    let j;
+    for (i = 2; count < number; i++) {
+        for ( j = 2; j < i; j++) {
+            if (i % j === 0) {
+                break;
+            }
+        }
+        if (i === j) {
+            count++;
+            document.write( i + '<br>');
+        }
+    }
+</script>
+</body>
+</html>

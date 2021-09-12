@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập vào một số"));
+    let check = true;
+    if (number <= 1) {
+        check = true;
+    } else {
+        for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
+            if (number % i === 0) {
+                check = false;
+                break;
+            }
+        }
+    }
+    if (check) {
+        console.log(check);
+        document.write('Là số nguyên tố');
+    } else {
+        document.write('Không phải là số nguyên tố');
+    }
+
+</script>
+</body>
+</html>
