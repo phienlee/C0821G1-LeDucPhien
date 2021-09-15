@@ -11,12 +11,20 @@
         array[i] = parseInt(prompt('Nhập vào giá trị trong mảng'));
     }
     let max = array[0];
+    let index = [];
     for (let i = 0; i < array.length; i++) {
-        if (array[i] < array[i + 1]) {
-            max = array[i + 1];
+        if (array[i] >= max) {
+            max = array[i];
         }
     }
-    document.write(max + 'là giá trị lớn nhất');
+    for (let i = 0; i < array.length; i++) {
+        if (array[i]=== max){
+            index.push(i)
+        }
+    }
+    alert('Số lớn nhất trong mảng là :' + max + 'và có vị trí là: '+ index)  ;
+
+
 </script>
 </body>
 </html>

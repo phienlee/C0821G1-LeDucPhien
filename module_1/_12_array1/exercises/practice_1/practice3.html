@@ -8,16 +8,19 @@
 <script>
     let array = new Array(10);
     for (let i = 0; i < array.length; i++) {
-        array = prompt('Nhập giá trị trong mảng');
+        array [i] = parseInt(prompt('Nhập giá trị trong mảng'));
     }
-    let max = array[0];
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] < array[i + 1]){
-            max = array[i+1]
+    let average ;
+    let sum = 0 ;
+    let max = array [0];
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
         }
-        alert(max + ' là giá trị lớn nhất ')
+        sum += array[i];
     }
-
+    average = sum / array.length;
+    alert(max + ' là giá trị lớn nhất '+ 'và có giá trị trung bình là :'+ average);
 
 
 </script>

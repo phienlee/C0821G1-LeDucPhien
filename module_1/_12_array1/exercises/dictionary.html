@@ -7,15 +7,20 @@
 <body>
 <input id="english" type="text">
 <button id="search" type="button" value="Search" onclick="search()">Search</button>
-<h4 id="vietnamese"></h4>
+<h4 id="vietnamese">Kết quả</h4>
 <script>
     function search() {
         let array1 = ["Hello", "Book", "Insert", "Read"];
         let array2 = ["Xin Chào", "Sách", "Chèn", "Đọc"];
         let search = document.getElementById('english').value;
+        let index ;
         for (let i = 0; i < array1.length; i++) {
             if (array1[i] === search) {
+                index  = i;
                 document.getElementById('vietnamese').innerText = array2[i];
+                break
+            }else {
+                document.getElementById('vietnamese').innerText = 'Không tìm thấy thông tin';
             }
         }
     }

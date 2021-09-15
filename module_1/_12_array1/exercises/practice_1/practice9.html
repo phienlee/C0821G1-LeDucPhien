@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array ;
+    let a = new Array(10);
+    let b = new Array(10);
+    let result = '';
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(prompt('Nhập vào giá trị tạo mảng số nguyên a'));
+        if (a[i] === isNaN()){
+
+        }
+    }
+    for (let i = 0; i < b.length ; i++) {
+        b[i] = parseInt(prompt('Nhập vào giá trị tạo mảng số nguyên b'));
+
+    }
+    array = a + b;
+    for(let i = 0; i < array.length; i++) {
+            result += array[i];
+    }
+    document.write('Result c : [ ['+a +']'+ '[' + b+ '] ]');
+</script>
+</body>
+</html>

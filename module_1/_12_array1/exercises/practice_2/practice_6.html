@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let array = new Array(10);
+  for (let i = 0; i <array.length ; i++) {
+      array[i] = prompt('Nhập vào mảng ký tự');
+  }
+  for (let i = 0; i <array.length ; i++) {
+      if (array[i] === '-'){
+          array[i] = '_';
+      }
+  }
+    document.write('Kết quả là: '+array);
+</script>
+</body>
+</html>

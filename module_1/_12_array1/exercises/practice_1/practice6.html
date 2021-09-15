@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let array = [1,2,3,4,5,6,7,8,9,0]
+   let num = parseInt(prompt('Nhập vào giá trị '));
+   for (let i = 0; i < array.length; i++) {
+       if (num === array[i]){
+           document.write('Giá trị có trong mảng');
+           break;
+       }
+       if (num !== array[i]){
+           document.write('Giá trị không có trong mảng');
+           break;
+       }
+   }
+
+</script>
+</body>
+</html>

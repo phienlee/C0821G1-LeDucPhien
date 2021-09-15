@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i]= parseInt(prompt('Nhâp giá trị vào mảng số nguyên'));
+    }
+    document.write('Mảng bạn vừa nhập vào như sau :'+ arr+ '<br>');
+    arr.sort(function (a, b){
+        if (a < b) return 1;
+        if (a > b) return -1;
+    })
+    document.write('Kết quả là sắp xếp theo thứ tự giảm dần là: ' + arr);
+</script>
+</body>
+</html>
