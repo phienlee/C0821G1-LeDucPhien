@@ -9,7 +9,7 @@
     let number = parseInt(prompt("Nhập vào một số"));
     let check = true;
     if (number <= 1) {
-        check = true;
+        check = true ;
     } else {
         for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
             if (number % i === 0) {
@@ -19,7 +19,6 @@
         }
     }
     if (check) {
-        console.log(check);
         document.write('Là số nguyên tố');
     } else {
         document.write('Không phải là số nguyên tố');

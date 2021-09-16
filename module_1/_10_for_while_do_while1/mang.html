@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = parseInt(prompt("Nhập số cần kiểm tra: "));
+    let check = true;
+    if (number < 2) {
+        check = true;
+        //bỏ alert() đổi lại check = true để kiểm tra số người dùng nhập vào phải số nguyên tố hay không
+    } else {
+        for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
+            //thêm hàm Math.floor để xét tất cả các số trong khoảng number
+            if (number % i === 0) {
+                check = false;//đổi check = true thành check = false
+                break;
+            }
+        }
+    }
+    if (check) {
+        alert("Là số nguyên tố")
+    } else {
+        alert("Không phải số nguyên tố");
+    }
+</script>
 </body>
 </html>

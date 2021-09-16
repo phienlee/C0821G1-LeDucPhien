@@ -8,15 +8,17 @@
 <script>
     let number = parseInt(prompt("Nhập vào số lượng số nguyên tố cần in ra"));
     let count = 0;
+    let check = true
     let i;
     let j;
     for (i = 2; count < number; i++) {
-        for ( j = 2; j < i; j++) {
+        for ( j = 2; j <= i; j++) {
             if (i % j === 0) {
+                check = false ;
                 break;
             }
         }
-        if (i === j) {
+        if (check) {
             count++;
             document.write( i + '<br>');
         }

@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
-    let string = "Lê Đức Phiên";
-    let array = [];
-    array = string.split( ' ' );
-    document.write(array + '<br>');
-    document.write('Số từ trong chuỗi là: '+array.length);
+    let string = prompt('Nhập vào một chuỗi')
+    let str1 = string.trim()
+    let str = string.match(/(\w+)/g).length;
+    str1.split(' ')
+    document.write('Số từ trong chuỗi của bạn là ' +str);
 </script>
 </body>
 </html>
