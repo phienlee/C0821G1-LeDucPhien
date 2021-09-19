@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function makeArrayChar(arr) {
+        let array = parseInt(prompt("Nhập vào độ dài của mảng cần tạo"));
+        arr = new Array(array);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = prompt("Nhập vào ký tự bất kỳ tại phần tử thứ " + i);
+        }
+        let log = prompt("Nhập vào phần tử bất kỳ: ");
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (log === arr[i]) {
+                count += 1;
+            }
+        }
+        if (count > 0) {
+            document.write("Số lần xuất hiện của ký tự " + log + " trong mảng trên là " + count + " lần")
+        } else {
+            document.write("Ký tự " + log + " không xuất hiện trong mảng trên nên kết quả trả về là -1")
+        }
+        document.write('<br>');
+    }
+
+    makeArrayChar();
+</script>
+</body>
+</html>

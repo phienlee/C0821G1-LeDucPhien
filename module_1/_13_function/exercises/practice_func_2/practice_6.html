@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="text">Nhập vào số cần kiểm tra :</label><input id="text"><br>
+<p>Kết quả : <span id="result"></span></p>
+<button onclick="checkNum()">Kiểm tra</button>
+<script>
+    function checked(num) {
+        let check;
+        check = num > 0;
+        return check;
+    }
+
+    function checkNum() {
+        let num = parseInt(document.getElementById('text').value);
+        let check;
+        check = checked(num);
+        document.getElementById('result').innerHTML = check;
+    }
+</script>
+</body>
+</html>

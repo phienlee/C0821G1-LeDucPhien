@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function makeArray(arr) {
+        let array = parseInt(prompt("Nhập vào độ dài để tạo mảng"));
+        arr = new Array(array);
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = parseInt(prompt("Nhập vào phần tử thứ " + i));
+        }
+        arr = arr.reverse();
+        document.write("Mảng được đảo như sau : " + arr);
+    }
+    makeArray();
+</script>
+</body>
+</html>

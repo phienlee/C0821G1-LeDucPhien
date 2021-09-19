@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+function checked(){
+    let str = parseInt(prompt('Nhập vào bất kỳ'));
+    if (isNaN(str)){
+        document.write('Giá trị bạn nhập k phải ký tự số');
+        return false ;
+    }else {
+        document.write('Giá trị bạn vừa nhập là ký tự số');
+    }
+}
+checked();
+</script>
+</body>
+</html>

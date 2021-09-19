@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function change(a, b) {
+        let number;
+        number = a;
+        a = b;
+        b = number;
+        document.write("Hai số đổi vị trí cho nhau như sau:" + '<br>');
+        document.write('Số thứ nhất : ' + a + '<br>' + " Số thứ hai : " + b);
+
+    }
+
+    let x = parseInt(prompt("Nhập vào số thứ nhất: "));
+    let y = parseInt(prompt("Nhập vào số thứ hai: "));
+    change(x, y);
+</script>
+</body>
+</html>

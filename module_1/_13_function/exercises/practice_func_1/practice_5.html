@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>Nhập tên ngôi sao bạn cần tìm:</span>
+<button onclick="findStar()">Start</button>
+<p>Chòm sao ứng với ngôi sao bạn vừa chọn là: <span id="result"></span></p>
+
+<script>
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function getStar(name) {
+        let star;
+        let index;
+        let check = true;
+        for (let i = 0; i < array1.length; i++) {
+            if (name === array1[i]) {
+                index = array1.indexOf(name);
+                star = array2[index];
+                check = true;
+                break;
+            } else {
+                check = false;
+            }
+        }
+        if (check === false) {
+            star = "Vui lòng nhập đúng tên ngôi sao"
+        }
+        return star
+    }
+
+    function findStar() {
+        let name = prompt("Nhập tên ngôi sao:");
+        let star;
+        star = getStar(name);
+        document.getElementById('result').innerText = star;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Thay đổi Foot sang Meter:</h3>
+<p>Nhập giá trị vào để chuyển đổi : </p>
+<form>
+    <p>
+        <label>Foot</label>
+        <label for="inputFoot"></label><input id="inputFoot" type="number" placeholder="Foot"
+                                              oninput="footConverter(this.value)"
+                                              onchange="footConverter(this.value)">
+    </p>
+    <p>Meter: <span id="outputMeter"></span></p>
+</form>
+<h3>Thay đổi Meter sang Foot:</h3>
+<p>Nhập vào giá trị để chuyển đổi :</p>
+<form>
+    <p>
+        <label>Meter</label>
+        <label for="inputted"></label><input id="inputted" type="number" placeholder="Meter"
+                                             oninput="meterConverter(this.value)"
+                                             onchange="meterConverter(this.value)">
+    </p>
+    <p>Foot: <span id="outputFoot"></span></p>
+</form>
+<script>
+    function footToMeter(foot) {
+        return 0.305 * foot
+    }
+
+    function meterToFoot(meter) {
+        return 3.279 * meter
+    }
+
+    function footConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById('outputMeter').innerHTML = footToMeter(valNum);
+
+    }
+
+    function meterConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById('outputFoot').innerHTML = meterToFoot(valNum);
+
+    }
+</script>
+</body>
+</html>
