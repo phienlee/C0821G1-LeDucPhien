@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor() {
+            this.pin = 100;
+            this.receivedMessage = [];
+            this.sentMessage = [];
+            this.status = true;
+        }
+
+        getPin() {
+            return this.pin = 100;
+        }
+
+        setPin(value) {
+            this.pin = value;
+        }
+
+        getReceivedMessage() {
+            return this.receivedMessage;
+        }
+
+        setReceivedMessage(value) {
+            this.receivedMessage = value;
+        }
+
+        getSentMessage() {
+            return this.sentMessage;
+        }
+
+        setSentMessage(value) {
+            this.sentMessage = value;
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        setStatus(status) {
+            this.status = status;
+        }
+        toString(){
+            let checked = confirm('Bạn có muón tắt điện thoại không ? ');
+            if(checked===true){
+                return 'Điện thoại đã tắt';
+            }else {
+                return 'Điện thoại đang bật';
+            }
+
+        }
+        sentMessage(sentMessage, address){
+            this.sentMessage.push(sentMessage);
+            address.receivedMessage(sentMessage);
+            this.pin--;
+        }
+        receivedMessage(receivedMessage){
+            this.receivedMessage.push(receivedMessage);
+            this.pin--;
+        }
+
+    }
+    let iphone = new Mobile();
+    let nokia = new Mobile();
+    iphone.sentMessage('Hello', nokia);
+    console.log("Tin nhắn đã gửi " + iphone.sentMessage);
+    console.log("Tin nhắn đã Nhận " + nokia.receivedMessage);
+    // alert(iphone.toString());
+</script>
+</body>
+</html>

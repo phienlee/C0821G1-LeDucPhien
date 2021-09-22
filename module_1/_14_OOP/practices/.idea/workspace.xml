@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ba05e9e-82d1-4102-ada4-82c41dcc20b0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../_12_array1/exercises/practice_2/practice_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_12_array1/exercises/practice_2/practice_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/practices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_3.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1y4LSzvyaMJdFWRvd3TCTBylH0t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_12_array1/exercises/practice_2/practice_4.html" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.reverse.html (1)">
+    <configuration name="reverse.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/practices/reverse.html?_ij_reload" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reverse.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/practices/reverse.html?_ij_reload" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.reverse.html (1)" />
+        <item itemvalue="JavaScript Debug.reverse.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ba05e9e-82d1-4102-ada4-82c41dcc20b0" name="Changes" comment="" />
+      <created>1631505918181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631505918181</updated>
+      <workItem from="1631505919453" duration="15888000" />
+      <workItem from="1631581698336" duration="1838000" />
+      <workItem from="1631774118389" duration="920000" />
+      <workItem from="1631781769833" duration="3283000" />
+      <workItem from="1631802268419" duration="4026000" />
+      <workItem from="1631840751894" duration="1821000" />
+      <workItem from="1632240470514" duration="115000" />
+      <workItem from="1632241231370" duration="1410000" />
+      <workItem from="1632272876723" duration="2819000" />
+      <workItem from="1632300230032" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

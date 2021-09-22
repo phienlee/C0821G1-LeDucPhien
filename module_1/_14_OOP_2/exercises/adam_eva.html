@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(newWeight) {
+            this.weight = newWeight;
+        }
+
+        decreaseWeight(apple) {
+            if (this.weight >= apple) {
+                this.weight -= apple;
+                return 'Táo còn lại:' + this.weight;
+            } else {
+                alert('Hết táo rồi bạn ơi!');
+            }
+        }
+
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        sayString() {
+            alert('Tôi tên là :' + this.name + '\n' + 'Giới tính :' + this.gender + '\n' + 'Cân nặng :' + this.weight + 'kg');
+        }
+
+
+        eatApple(apple) {
+            this.weight += apple;
+            return 'Cân nặng hiện tại' + this.weight
+
+        }
+
+        checkWeightApple(apple) {
+            if (apple.getWeight() > 0) {
+                alert("Trọng lương quả táo :" + apple.getWeight());
+            } else {
+                alert("Không có quả táo nào");
+            }
+        }
+
+    }
+
+
+    let human = new Human('Phiên', 'Nam', 53);
+    let apple = new Apple();
+    function eat(apples) {
+        human.eatApple(apples);
+        apple.decreaseWeight(apples);
+    }
+    // human.sayString();
+    // apple.setWeight(3);
+    // human.eatApple(2);
+    alert(human.eatApple(2))
+    alert(apple.decreaseWeight(2));
+    alert(human.eatApple(2))
+    alert(apple.decreaseWeight(2));
+    alert(human.eatApple(2))
+    alert(apple.decreaseWeight(2));
+    alert(human.eatApple(2))
+    alert(apple.decreaseWeight(2));
+    alert(human.eatApple(2))
+    alert(apple.decreaseWeight(2));
+    alert(human.eatApple(2))
+    alert(apple.decreaseWeight(2));
+
+
+
+</script>
+
+</body>
+</html>
