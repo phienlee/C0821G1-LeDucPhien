@@ -7,10 +7,6 @@
 <body>
 <script>
     class SwitchButton {
-        constructor() {
-            this.status = true;
-        }
-
         getLamp() {
             return this.lamp;
         }
@@ -18,95 +14,12 @@
         setLamp(value) {
             this.lamp = value;
         }
-
-        switchButton() {
-            alert('Bóng đèn đang tắt');
-        }
-
-        connectToLamp() {
-            return this.status
-        }
-
-        switchOn() {
-            let check = parseInt(prompt('Bạn có muốn tắt công tắc \n' +
-                '1.Bật \n' +
-                '2.Quay lại\n'));
-            if (check === 1) {
-                alert('Bóng đèn đã bật');
-                return this.status;
-            } else {
-                alert('Bóng đèn vẫn đang tắt');
-            }
-        }
-
-        switchOff() {
-            let confirm = parseInt(prompt('Bạn có muốn tắt công tắc \n' +
-                '1.Tắt \n' +
-                '2.Quay lại\n'));
-            if (confirm === 1) {
-                alert('Công tắc đã tắt');
-                this.status = false;
-            } else {
-                alert('Công tắc đang bật');
-                this.status = true;
-            }
-        }
-
-
-        getStatus() {
-            return this.status;
-        }
-
-        setStatus(value) {
-            this.status = value;
-        }
-    }
-
-    class ElectricLamp {
-        constructor() {
+        constructor(lamp) {
             this.status = true;
+            this.lamp = lamp;
         }
 
-        getStatus() {
-            return this.status;
-        }
-
-        setStatus(value) {
-            this.status = value;
-        }
-
-        electricLamp() {
-            return this.status;
-        }
-
-        turnOff() {
-            let check = parseInt(prompt('Bạn có muốn tắt đèn\n' +
-                '1.Tắt \n' +
-                '2.Quay lại \n'));
-            if (check === 1) {
-                alert('Bóng đèn đã tắt');
-            } else {
-                alert('Bóng đèn đang bật');
-            }
-        }
-
-        turnOn() {
-            let check = parseInt(prompt('Bạn có muốn bật đèn \n' +
-                '1.Bật \n ' +
-                '2.Quay lại \n'));
-            if (check === 1) {
-                alert('Bóng đèn đã bật');
-            } else {
-                alert('Bóng đèn đang tắt');
-            }
-        }
     }
-
-    let switchButton = new SwitchButton();
-    let electricLamp = new ElectricLamp();
-    // switchButton.switchOff();
-    electricLamp.turnOff()
-
 </script>
 </body>
 </html>
