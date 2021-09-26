@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [
+        [1, 2, 33, 4, 5, 6],
+        [-1, 3, 34, 6, 8, 9, 11]
+    ];
+    function max(array) {
+        let maxNumber = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j <array[i].length ; j++) {
+                if (array[i][j] > maxNumber){
+                    maxNumber = array[i][j];
+                }
+            }
+        }
+        return maxNumber;
+    }
+    function min(array) {
+        let minNumber = array[0][0];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j <array[i].length ; j++) {
+                if (array[i][j] < minNumber){
+                    minNumber = array[i][j];
+                }
+            }
+        }
+        return minNumber;
+    }
+    alert(min(array));
+    // alert(max(array));
+</script>
+</body>
+</html>

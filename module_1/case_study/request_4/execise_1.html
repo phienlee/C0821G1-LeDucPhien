@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập vào xâu kí tự');
+
+    function standardize(str) {
+        let str1 = str.trim().toLowerCase();
+        str1 = str1.replaceAll(/\s+/g, ' ');
+        let arr = str1.split(' ');
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.length < str1.length) {
+                arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+            }
+            str1 = arr.join(' ');
+        }
+        return str1;
+    }
+
+    function findWord(string) {
+        let array = string.split(' ');
+        let max = array[0].length;
+        for (let i = 1; i < array.length; i++) {
+            if (array[i].length > max) {
+                max = array[i].length;
+            }
+        }
+        for (let i = 0; i < array.length; i++) {
+            if (max === array[i].length) {
+                return array[i];
+            }
+        }
+    }
+
+    alert('Xâu được chuẩn hóa : ' + standardize(str));
+    alert(findWord(str));
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = 'abcabdabcde';
+    let arr = string.split('');
+    for (let i = 0; i < arr.length; i++) {
+        let temp = arr[i];
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] === temp) {
+                arr.splice(j, 1);
+            }
+        }
+    }
+    console.log('Số kí tự khác nhau là: ' + arr.length);
+</script>
+</body>
+</html>

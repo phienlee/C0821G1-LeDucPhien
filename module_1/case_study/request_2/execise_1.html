@@ -6,7 +6,22 @@
 </head>
 <body>
 <script>
-    let
+    let money = parseInt(prompt('Nhâp số tiền lương của bạn : '));
+    let tax;
+    let money1;
+    if (money < 7) {
+        tax = 5 * money / 100;
+        money1 = money - tax;
+    } else if (money < 15) {
+        tax = 10 * money / 100;
+        money1 = money - tax;
+    } else {
+        tax = 20 * money / 100;
+        money1 = money - tax;
+    }
+    document.write('Thuế thu nhập của bạn là: ' + tax + "    VND");
+    document.write('<br>');
+    document.write('Lương ròng của bạn là: ' + money1 + " VND");
 </script>
 </body>
 </html>

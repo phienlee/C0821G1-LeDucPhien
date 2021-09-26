@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập vào gì đó');
+
+    function readNumber(number) {
+        let string;
+        switch (number) {
+            case '1':
+                string = 'Một';
+                break;
+            case '2':
+                string = 'Hai';
+                break;
+            case '3':
+                string = 'Ba';
+                break;
+            case '4':
+                string = 'Bốn';
+                break;
+            case '5':
+                string = 'Năm';
+                break;
+            case '6':
+                string = 'Sáu';
+                break;
+            case '7':
+                string = 'Bảy';
+                break;
+            case '8':
+                string = 'Tám';
+                break;
+            case '9':
+                string = 'Chín';
+                break;
+            case '0':
+                string = 'Không';
+                break;
+            default:
+                string = number;
+        }
+        return string;
+    }
+
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+        result += readNumber(str.charAt(i)) + ' ';
+    }
+    alert(result);
+</script>
+</body>
+</html>

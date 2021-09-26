@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = 'aabcc';
+    let str1 = 'adcaa';
+    let arr = str.split('');
+    let arr1 = str1.split('');
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr1.length; j++) {
+            if (arr[i] === arr1[j]) {
+                arr2.push(arr1[j]);
+                arr1.splice(j, 1);
+                break;
+            }
+        }
+    }
+    console.log('Số kí tự chung giữa 2 xâu kí tự :' + arr2.length);
+
+</script>
+</body>
+</html>
