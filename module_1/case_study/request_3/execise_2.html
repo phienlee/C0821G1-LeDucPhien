@@ -10,11 +10,12 @@
     let arrB = [1, 2, 3, 5, 8, 6, 7, 10];
     let arrAB = [];
     for (let i = 0; i < arrB.length; i++) {
-        if (arrB[i] !== arrA[i]) {
+        if (arrA.indexOf(arrB[i]) !== -1 && arrAB.indexOf(arrB[i])=== -1){
             arrAB.push(arrB[i]);
         }
     }
-    console.log(arrAB);
+    arrAB.sort(function (a , b) {return a-b});
+    alert('Phần tử có trong mảng B mà không có trong mảng A là :'+ arrAB)
 </script>
 </body>
 </html>
