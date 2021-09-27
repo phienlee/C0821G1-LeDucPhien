@@ -6,7 +6,19 @@
 </head>
 <body>
 <script>
+    let array = [1, 2, 3, 4, 5, 6, 7];
 
+    function prefixSum(array) {
+        let newArray = [];
+        for (let  i = 0; i < array.length; i++) {
+            newArray[i] = 0;
+            for (let j = 0; j < i + 1; j++) {
+                newArray[i] += array[j];
+            }
+        }
+        return newArray;
+    }
+    console.log(prefixSum(array));
 </script>
 </body>
 </html>
